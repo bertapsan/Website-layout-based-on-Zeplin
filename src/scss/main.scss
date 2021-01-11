@@ -6,16 +6,59 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index'; */
-
+@import 'core/reset';
+@import 'core/variables';
 /*HEADER*/
-header {
-    background-image: url(../images/)
+.header {
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .h1 {
-font-family: "$font-family-Slab";
-font-size: 42px;
+  font-family: $font-family-RobotoSlab;
+  font-weight: 700;
+  font-size: 42px;
+  color: $font-white;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 3px 0px $shadows-color;
+  margin-top: 284px;
 }
+.h1__anonymous {
+  display: block;
+  text-align: center;
+}
+.h1__proxy {
+  display: block;
+  text-align: center;
+}
+.lema {
+  font-family: $font-Roboto;
+  font-size: 14px;
+  color: $font-white;
+  margin-top: 10px;
+}
+.topbullet {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  margin-top: 45px;
+  background-color: $background-white;
+}
+.nav__top {
+  position: fixed;
+  height: 44px;
+  width: 44px;
+  top: 0px;
+  left: 0px;
+  z-index: 900;
 
+}
 
 /*MAIN*/
 
