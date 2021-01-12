@@ -9,7 +9,7 @@
 @import "core/reset";
 @import "core/variables";
 /*HEADER*/
- .header {
+.header {
   background-image: url(../images/cover.jpg);
   background-blend-mode: multiply;
   background-color: rgba(255, 255, 255, 0.5);
@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-} 
+}
 .h1 {
   font-family: $font-family-RobotoSlab;
   font-weight: 700;
@@ -253,15 +253,15 @@
   .wrapperreasons__title--1 {
     grid-column: 1/2;
     grid-row: 2/3;
-  } 
+  }
   .wrapperreasons__title--2 {
     grid-column: 2/3;
     grid-row: 2/3;
-  } 
+  }
   .wrapperreasons__title--3 {
     grid-column: 3/4;
     grid-row: 2/3;
-  } 
+  }
   .wrapperreasons__content--item1 {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -302,7 +302,6 @@
   }
 }
 
-
 /*FOOTER*/
 .footer {
   display: flex;
@@ -325,11 +324,11 @@
   margin: -22.5px;
 }
 .footer__nav {
-  margin-top:60px;
+  margin-top: 60px;
   text-transform: uppercase;
   line-height: 30px;
 }
-.footer__nav--ul{
+.footer__nav--ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -365,37 +364,41 @@
     flex-wrap: wrap;
     height: 240px;
   }
-  .footer__arrow{
+  .footer__arrow {
     display: block;
     position: relative;
     left: 50%;
     width: 100vw;
-    order:1;
+    order: 1;
   }
   .footer__nav {
     order: 3;
-    /* margin-left: 30px; */
     margin-top: 22px;
   }
-  .footer__nav--ul{
+  .footer__nav--ul {
     justify-content: flex-start;
     align-items: flex-start;
-    /* margin-top: 0px; */
   }
   .footer__social {
-   order: 4;
-   justify-content: flex-start;
-   align-items: flex-start;
-   margin-right: 39px;
-   /* margin-left: 30px; */
-   margin-top: 22px;
+    order: 4;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 39px;
+    margin-top: 22px;
   }
   .footer__copy {
     order: 2;
-    margin-left: 33px;
+    margin-left: 39px;
     margin-top: 22px;
-    /* margin-right: 30px; */
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+@media all and (min-width: 1200px) {
+  .footer__social {
+    margin-right: 370px;
+  }
+  .footer__copy {
+    margin-left: 370px;
   }
 }
