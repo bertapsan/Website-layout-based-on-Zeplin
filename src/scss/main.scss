@@ -132,6 +132,11 @@
   margin-top: 15px;
   line-height: 30px;
 }
+.button {
+  background-color: white;
+  outline: none;
+  transition-duration: 0.4s;
+}
 .wrapperlooking__button {
   height: 45px;
   width: 76px;
@@ -145,6 +150,10 @@
   font-size: 20px;
   margin: 30px 0px 45px 0px;
   padding: 7px 25px 7px 25px;
+}
+.wrapperlooking__button:hover {
+  background-color: $background-orange;
+  color: white;
 }
 @media all and (min-width: 768px) {
   .wrapperlooking {
@@ -215,6 +224,11 @@
   height: 63px;
   line-height: 30px;
 }
+.button1 {
+  background-color: $background-orange;
+  transition-duration: 0.4s;
+  border: none;
+}
 .wrapperreasons__button {
   width: 184px;
   height: 45px;
@@ -227,6 +241,12 @@
   color: $font-white;
   margin-bottom: 60px;
   align-self: center;
+}
+.wrapperreasons__button:hover {
+  background-color: $background-white;
+  color: $font-orange;
+  border: solid 1px;
+  border-color: $font-greyish-brown;
 }
 @media all and (min-width: 768px) {
   .wrapperreasons {
@@ -354,6 +374,27 @@
 .footer__copy--heart {
   color: $font-orange;
   padding: 2px;
+  animation-name: heart;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes heart {
+  0% { 
+    color: $font-white;
+  }
+  25% {
+    color: $font-orange;
+  }
+  50% {
+    color: $font-lightblue;
+  }
+  75% {
+    color: $font-orange;
+  }
+  100% {
+    color: $font-greyish-brown
+  }
+
 }
 @media all and (min-width: 768px) {
   .footer {
