@@ -245,7 +245,8 @@
 .wrapperreasons__button:hover {
   background-color: $background-white;
   color: $font-orange;
-  border: solid 1px;
+  border: dotted 2px;
+  font-size: 18px;
   border-color: $font-greyish-brown;
 }
 @media all and (min-width: 768px) {
