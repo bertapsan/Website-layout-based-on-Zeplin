@@ -1,19 +1,19 @@
 /*HEADER*/
 .header {
-    background-image: url(../images/cover.jpg);
-    background-blend-mode: multiply;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .h1 {
+  background-image: url(../images/cover.jpg);
+  background-blend-mode: multiply;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__h1 {
     font-family: $font-family-RobotoSlab;
     font-weight: 700;
     font-size: 42px;
@@ -21,74 +21,76 @@
     text-transform: uppercase;
     text-shadow: 0px 2px 3px $shadows-color;
     margin-top: 284px;
-    /* height: 110px; */
+
+    &--anonymous {
+      display: block;
+      text-align: center;
+      height: 55px;
+    }
+    &--proxy {
+      display: block;
+      text-align: center;
+      height: 55px;
+    }
   }
-  .h1__anonymous {
-    display: block;
-    text-align: center;
-    height: 55px;
-  }
-  .h1__proxy {
-    display: block;
-    text-align: center;
-    height: 55px;
-  }
-  .h2__lema {
+  &__h2--lema {
     font-family: $font-Roboto;
     font-weight: 400;
     font-size: 16px;
     color: $font-white;
     margin-top: 10px;
   }
-  .topbullet {
+  &__topbullet {
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
     margin-top: 45px;
     background-color: $background-white;
-    /* padding: 18px 12px 15.3px 13px; */
   }
-  .nav__top {
-    position: fixed;
-    height: 44px;
-    width: 44px;
-    top: 0px;
-    left: 0px;
-    z-index: 900;
-    background-color: $blue;
-    padding: 15px 14px;
-  }
-  @media all and (min-width: 768px) {
-    .header {
-      min-height: 768px;
-    }
-    .h1 {
+}
+.nav__top {
+  position: fixed;
+  height: 44px;
+  width: 44px;
+  top: 0px;
+  left: 0px;
+  z-index: 900;
+  background-color: $blue;
+  padding: 15px 14px;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    min-height: 768px;
+
+    &__h1 {
       font-size: 80px;
       margin-top: 384px;
+
+      &--anonymous {
+        height: 106px;
+      }
+      &--proxy {
+        height: 106px;
+      }
     }
-    .h1__anonymous {
-      height: 106px;
-    }
-    .h1__proxy {
-      height: 106px;
-    }
-    .h2__lema {
+    &__h2--lema {
       font-size: 24px;
       margin-top: 20px;
     }
-    .topbullet {
+    &__topbullet {
       margin-top: 30px;
     }
   }
-  @media all and (min-width: 1200px) {
-    .h1 {
-      font-size: 100px;
-    }
-    .h1__anonymous {
-      height: 132px;
-    }
-    .h1__proxy {
-      height: 132px;
-    }
+}
+@media all and (min-width: 1200px) {
+  .h1 {
+    font-size: 100px;
   }
-  
+  .h1__anonymous {
+    height: 132px;
+  }
+  .h1__proxy {
+    height: 132px;
+  }
+}
