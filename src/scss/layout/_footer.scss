@@ -80,19 +80,19 @@
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
     height: 240px;
 
     &__arrow {
       display: block;
       position: relative;
       left: 50%;
-      /* width: 100vw; */
       order: 1;
     }
     &__nav {
       order: 3;
       margin-top: 45px;
+      margin-left: 30px;
+      width: 210px;
 
       &--ul {
         justify-content: flex-start;
@@ -105,11 +105,13 @@
       align-items: flex-start;
       margin-right: 39px;
       margin-top: 45px;
+      width: 210px;
     }
     &__copy {
       order: 2;
       margin-left: 39px;
       margin-top: 45px;
+      width: 210px;
       justify-content: flex-start;
       align-items: flex-start;
     }
@@ -118,8 +120,13 @@
 @media all and (min-width: 1200px) {
   .footer__social {
     margin-right: 370px;
+    width: 161px;
   }
   .footer__copy {
     margin-left: 370px;
+    width: 161px;
+  }
+  .footer_nav {
+    width: 161px;
   }
 }
