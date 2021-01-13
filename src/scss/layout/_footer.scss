@@ -1,0 +1,123 @@
+
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $background-dark-grey-blue;
+    height: 465px;
+    font-family: $font-Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: $font-white;
+  }
+  .footer__arrow--button {
+    width: 45px;
+    height: 45px;
+    background-color: $background-white;
+    border-radius: 22.5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin: -22.5px;
+  }
+  .footer__nav {
+    margin-top: 60px;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  .footer__nav--ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer__social {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  .footer__copy {
+    margin-top: 30px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer__copy--heart {
+    color: $font-orange;
+    padding: 2px;
+    animation-name: heart;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+  @keyframes heart {
+    0% { 
+      color: $font-white;
+    }
+    25% {
+      color: $font-orange;
+    }
+    50% {
+      color: $font-lightblue;
+    }
+    75% {
+      color: $font-orange;
+    }
+    100% {
+      color: $font-greyish-brown
+    }
+  
+  }
+  @media all and (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: 240px;
+    }
+    .footer__arrow {
+      display: block;
+      position: relative;
+      left: 50%;
+      width: 100vw;
+      order: 1;
+    }
+    .footer__nav {
+      order: 3;
+      margin-top: 22px;
+    }
+    .footer__nav--ul {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .footer__social {
+      order: 4;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-right: 39px;
+      margin-top: 22px;
+    }
+    .footer__copy {
+      order: 2;
+      margin-left: 39px;
+      margin-top: 22px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    .footer__social {
+      margin-right: 370px;
+    }
+    .footer__copy {
+      margin-left: 370px;
+    }
+  }
