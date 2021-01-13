@@ -87,12 +87,12 @@
       display: block;
       position: relative;
       left: 50%;
-      width: 100vw;
+      /* width: 100vw; */
       order: 1;
     }
     &__nav {
       order: 3;
-      margin-top: 22px;
+      margin-top: 45px;
 
       &--ul {
         justify-content: flex-start;
@@ -104,12 +104,12 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin-right: 39px;
-      margin-top: 22px;
+      margin-top: 45px;
     }
     &__copy {
       order: 2;
       margin-left: 39px;
-      margin-top: 22px;
+      margin-top: 45px;
       justify-content: flex-start;
       align-items: flex-start;
     }
