@@ -2,9 +2,9 @@
 @import 'core/reset';
 @import 'components/code';
 @import 'components/links';
+@import 'layout/footer';
 @import 'layout/page';
 @import 'layout/header';
-@import 'layout/footer';
 @import 'pages/index'; */
 @import "core/reset";
 @import "core/variables";
@@ -321,7 +321,6 @@
     padding: 12px 63px 12px 63px;
   }
 }
-
 /*FOOTER*/
 .footer {
   display: flex;
