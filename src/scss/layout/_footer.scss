@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: $background-dark-grey-blue;
+  background-color: $blue;
   height: 465px;
   font-family: $font-Roboto;
   font-size: 16px;
   font-weight: 400;
-  color: $font-white;
+  color: $font-black;
 
   &__arrow--button {
     width: 45px;
@@ -20,7 +20,7 @@
     margin: -22.5px;
   }
   &__nav {
-    margin-top: 60px;
+    margin-top: 45px;
     text-transform: uppercase;
     line-height: 30px;
 
@@ -32,7 +32,7 @@
     }
   }
   &__social {
-    margin-top: 30px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,7 +41,7 @@
     line-height: 30px;
   }
   &__copy {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@
       order: 1;
     }
     &__nav {
-      order: 3;
+      order: 2;
       margin-top: 45px;
       margin-left: 30px;
       width: 210px;
@@ -100,7 +100,7 @@
       }
     }
     &__social {
-      order: 4;
+      order: 3;
       justify-content: flex-start;
       align-items: flex-start;
       margin-right: 39px;
@@ -108,12 +108,16 @@
       width: 210px;
     }
     &__copy {
-      order: 2;
+      order: 4;
       margin-left: 39px;
       margin-top: 45px;
       width: 210px;
       justify-content: flex-start;
       align-items: flex-start;
+
+      &--components {
+        color: $font-orange;
+      }
     }
   }
 }
